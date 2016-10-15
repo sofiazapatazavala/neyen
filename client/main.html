@@ -1,0 +1,19 @@
+<head>
+  <title>Neyen · Organizando el contenido educativo</title>
+</head>
+
+<template name="layout">
+  <main>
+    <nav>
+      <a href="/nuevo_usuario">nuevo usuario</a> · 
+      <a href="/buscar_experiencias">buscar experiencias</a>
+    </nav>
+    {{> Template.dynamic template=main}}
+  </main>
+</template>
+<template name="main">
+    <h1>Bienvenido a Neyen</h1>
+    <input id="watson" placeholder="qué quieres enseñar diferente hoy?">
+    <p id="respuesta">{{respuesta}}</p>
+</template>
+

@@ -1,0 +1,14 @@
+<template name="experiencia">
+  <h1>Experiencia: Laboratorio práctico de reconocimiento de precipitados</h1>
+  <p>Esta experiencia es muy bacán porque blebleble...</p>
+  
+  <h4>Productos relacionados</h4>
+  {{#each producto in productos}}
+    <div class="item">
+      <img src="{{producto.thumbnail}}"/>
+      <h4>{{producto.title}}</h4>
+      <span>${{producto.price}} - Comprar en <a href="{{producto.permalink}}">MercadoLibre</a></span>
+    </div>
+  {{/each}}
+  <div class="clearfix"></div>
+</template>
